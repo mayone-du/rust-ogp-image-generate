@@ -15,7 +15,7 @@ fn main() {
     let font = Font::try_from_vec(font).unwrap();
 
     // 文字のサイズを決定
-    let size = 10.0;
+    let size = 20.0;
     let scale = Scale { x: size, y: size };
 
     // コマンド実行時の引数で文字列を受け取り、その文字を画像に描画する
@@ -26,7 +26,7 @@ fn main() {
     draw_text_mut(
         &mut image,
         Rgba([0u8, 0u8, 0u8, 0u8]),
-        10,
+        20,
         0,
         scale,
         &font,
